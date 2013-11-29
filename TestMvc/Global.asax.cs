@@ -8,6 +8,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
+using TestMvc.Domain.Repositories;
+using TestMvc.Models;
 
 namespace TestMvc
 {
@@ -38,7 +40,9 @@ namespace TestMvc
 
         private void RegisterCustomTypes(ContainerBuilder builder)
         {
-            //builder.RegisterType<Ser>()
+            builder.RegisterType<UsersContext>().InstancePerLifetimeScope();
+
+            builder.RegisterGeneric(typeof (Repository<>)).InstancePerLifetimeScope();
         }
     }
 }
