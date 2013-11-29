@@ -123,3 +123,5 @@ C:\data\projects\PD\TestMVC\TestMvc\bin\DotNetOpenAuth.OpenIdInfoCard.UI.xml
 C:\data\projects\PD\TestMVC\TestMvc\bin\DotNetOpenAuth.OpenIdOAuth.xml
 C:\data\projects\PD\TestMVC\TestMvc\bin\Org.Mentalis.Security.Cryptography.xml
 C:\data\projects\PD\TestMVC\TestMvc\bin\Mono.Math.xml
+C:\data\projects\PD\TestMVC\TestMvc\bin\Autofac.Integration.Mvc.dll
+C:\data\projects\PD\TestMVC\TestMvc\bin\Autofac.Integration.Mvc.xml
