@@ -1,7 +1,9 @@
-﻿@model dynamic
+﻿@model TestMvc.Models.Program
 
 @{
     ViewBag.Title = "Programs";
 }
 
 <h2>Programs</h2>
+
+@Html.EditorForModel(Model)

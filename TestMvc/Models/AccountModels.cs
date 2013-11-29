@@ -13,9 +13,11 @@ namespace TestMvc.Models
         public UsersContext()
             : base("DefaultConnection")
         {
+            
         }
 
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Program> Programs { get; set; }
     }
 
     [Table("UserProfile")]

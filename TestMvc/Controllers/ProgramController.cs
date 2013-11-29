@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
+using TestMvc.Models;
 
 namespace TestMvc.Controllers
 {
@@ -6,9 +8,11 @@ namespace TestMvc.Controllers
     {
         public ActionResult Index()
         {
-            
+            var context = new UsersContext();
+            var viewModel = context.Programs.FirstOrDefault();
 
-            return View();
+
+            return View(viewModel);
         }
     }
 }
