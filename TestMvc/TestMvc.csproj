@@ -238,12 +238,14 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProgramController.cs" />
+    <Compile Include="Domain\Models\EntityBase.cs" />
+    <Compile Include="Domain\Repositories\ProgramRepository.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\Program.cs">
+    <Compile Include="Domain\Models\AccountModels.cs" />
+    <Compile Include="Domain\Models\Program.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -363,6 +365,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Domain\Services\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
