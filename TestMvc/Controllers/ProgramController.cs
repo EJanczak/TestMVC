@@ -9,7 +9,7 @@ namespace TestMvc.Controllers
     {
         public ActionResult Index()
         {
-            var repository = new ProgramRepository();
+            var repository = new Repository();
             var viewModel = repository.GetById(0);
 
             return View(viewModel);

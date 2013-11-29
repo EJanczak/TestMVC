@@ -4,12 +4,12 @@ using TestMvc.Models;
 
 namespace TestMvc.Domain.Repositories
 {
-    public class ProgramRepository
+    public class Repository<T> where T:EntityBase
     {
-        public Program GetById(int id)
+        public T GetById(int id)
         {
             var context = new UsersContext();
-            return context.Programs.FirstOrDefault(x => x.Id == id);
+            return context.Set<T>().FirstOrDefault(x => x.Id == id);
         }
 
     }
