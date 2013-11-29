@@ -38,7 +38,7 @@ namespace TestMvc
 
         private void RegisterCustomTypes(ContainerBuilder builder)
         {
-            builder.RegisterType<Ser>()
+            //builder.RegisterType<Ser>()
         }
     }
 }
